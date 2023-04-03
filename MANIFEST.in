@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bursary *.css
+recursive-include bursary *.csv
+recursive-include bursary *.html
+recursive-include bursary *.ico
+recursive-include bursary *.js
+recursive-include bursary *.json
+recursive-include bursary *.md
+recursive-include bursary *.png
+recursive-include bursary *.py
+recursive-include bursary *.svg
+recursive-include bursary *.txt
+recursive-exclude bursary *.pyc
