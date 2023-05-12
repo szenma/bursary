@@ -1,0 +1,956 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-03 11:35:26.069912",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_student",
+  "amended_from",
+  "gender",
+  "date_of_birth",
+  "id_no",
+  "name_of_school",
+  "admission",
+  "campus",
+  "faculty",
+  "course_of_study",
+  "mode_of_study",
+  "class",
+  "course_duration",
+  "column_break_hreml",
+  "expected_year",
+  "mobile",
+  "polling_station",
+  "ward",
+  "location",
+  "sub_location",
+  "physical_address",
+  "permanent_address",
+  "institutions_postal_address",
+  "institutions_phone_number",
+  "amount_applied_for",
+  "family_background_section",
+  "indicate_your_family_status",
+  "number_of_siblings",
+  "column_break_pen4l",
+  "estimated_family_income",
+  "estimated_family_expense",
+  "father_mother_details_section",
+  "father_foll_name",
+  "father_telephone_number",
+  "father__address",
+  "father__occupation",
+  "type_of_employment",
+  "main_source_of_income",
+  "column_break_hkoj6",
+  "mother_full_name",
+  "mother_telephone_number",
+  "mother__address",
+  "mother_occupation",
+  "type_of_employment_mother",
+  "main_source_of_income_mother",
+  "guardian_details_section",
+  "guardian_full_name",
+  "guardian__telephone_number",
+  "guardian__address",
+  "clbr",
+  "guardian__occupation",
+  "guardian__type_of_employement",
+  "guardian__main_source_of_income",
+  "sibling_details_section",
+  "provide_the_names_of_siblings_in_school",
+  "applicants_additional_information_section",
+  "why_are_you_applying_for_bursary_assistance",
+  "have_you_received_any_financial_support",
+  "bursaries_from_other_organizations_in_the_past",
+  "do_you_suffer_from_any_physical_impairment",
+  "do_you_suffer_from_any_chronic_illness",
+  "o_your_parents",
+  "guardians_suffer_from_any_chronic_illness",
+  "education_funding_history_section",
+  "in_secondary_schoo",
+  "in_colleg",
+  "in_the_university",
+  "column_break_vawmu",
+  "other_sources_of_funding_in_secondary_school",
+  "other_sources_of_funding_in_college",
+  "other_sources_of_funding_in_university",
+  "applicants_accadamic_performance_section",
+  "what_is_your_average_academic_performance",
+  "have_you_been_sent_away_from_school",
+  "if_yes",
+  "specify_the_number_of_weeks_you_stayed_away_from_school",
+  "column_break_fnoml",
+  "annual_fees_as_per_fees_structure",
+  "last_semester",
+  "this_semester",
+  "next_semester",
+  "loan_from_helb",
+  "referees_section",
+  "refer1_name",
+  "refer1_address",
+  "refer1_telephone_number",
+  "column_break_0pxao",
+  "refer2_name",
+  "refer2_address",
+  "refer2_telephone_number",
+  "declarations_section",
+  "students_declaration",
+  "students_signature",
+  "student_date",
+  "column_break_5dgyg",
+  "parents",
+  "guardians_name",
+  "guardians_date",
+  "guardians_sign",
+  "verifications_section",
+  "religious_leader",
+  "name_of_religion",
+  "type_of_religion",
+  "if_other_specify",
+  "comment_on_the_status_of_the_family",
+  "column_break_r2kg7",
+  "certify_that_the_information_given_herein_is_true",
+  "nane_certify",
+  "signature_certify",
+  "date_certify",
+  "chief_section",
+  "name_of_the_area_chief",
+  "sub_local",
+  "parents_of_the_applican",
+  "column_break_vsots",
+  "i_certify_that_the_information_given_herein_is_true",
+  "chief_sign",
+  "chief_date",
+  "for_official_use_by_the_polling_station_vetting_section",
+  "dualy_sign",
+  "dualy_attach",
+  "recommended_for_bursary",
+  "column_break_xphgq",
+  "reasons_for_non_recommendation",
+  "polling_station_vetting_committee_members_section",
+  "chairperson_section",
+  "chairpersons_name",
+  "chairperson_date",
+  "column_break_qgdgv",
+  "chairperson_signature",
+  "secretary_section",
+  "secretarys_name",
+  "secretary_date",
+  "column_break_9w4t7",
+  "secretary_signature",
+  "member_section",
+  "member_name",
+  "member_date",
+  "column_break_eqaa7",
+  "member_signature",
+  "bursary_sub_commattie",
+  "recommended_for_bursary_award",
+  "bursary_awarded_kshs",
+  "reasons",
+  "column_break_vrwoh",
+  "sec_name",
+  "com_date",
+  "com_signature",
+  "con_stamp",
+  "uploading_supporting_documents_section",
+  "upload_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_student",
+   "fieldtype": "Data",
+   "label": "Name of Student  (as it appears in ID/otficial documents)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bursary Application",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "id_no",
+   "fieldtype": "Data",
+   "label": "ID No/Passport No"
+  },
+  {
+   "fieldname": "name_of_school",
+   "fieldtype": "Data",
+   "label": "Name of School/College/University"
+  },
+  {
+   "fieldname": "admission",
+   "fieldtype": "Data",
+   "label": "Admission/Registration Number"
+  },
+  {
+   "fieldname": "campus",
+   "fieldtype": "Data",
+   "label": "Campus/Branch (for tertiary institution and University)"
+  },
+  {
+   "fieldname": "faculty",
+   "fieldtype": "Data",
+   "label": "Faculty/Department (for tertiary institution and University) "
+  },
+  {
+   "fieldname": "course_of_study",
+   "fieldtype": "Data",
+   "label": "Course of Study (for tertiary institution and University)"
+  },
+  {
+   "fieldname": "mode_of_study",
+   "fieldtype": "Select",
+   "label": "Mode of Study",
+   "options": "Regular\nParallel\nBoarding\nDay"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class/Grade/Year of Study"
+  },
+  {
+   "fieldname": "course_duration",
+   "fieldtype": "Data",
+   "label": "Course Duration"
+  },
+  {
+   "fieldname": "expected_year",
+   "fieldtype": "Data",
+   "label": "Expected Year and month of completion"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile/Telephone No"
+  },
+  {
+   "fieldname": "polling_station",
+   "fieldtype": "Data",
+   "label": "Polling Station"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Data",
+   "label": "Ward"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "sub_location",
+   "fieldtype": "Data",
+   "label": "Sub Location"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "institutions_postal_address",
+   "fieldtype": "Data",
+   "label": "Institutions Postal Address"
+  },
+  {
+   "fieldname": "institutions_phone_number",
+   "fieldtype": "Data",
+   "label": "Institutions Phone Number"
+  },
+  {
+   "fieldname": "amount_applied_for",
+   "fieldtype": "Data",
+   "label": "Amount Applied for (Kshs)"
+  },
+  {
+   "fieldname": "column_break_hreml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "family_background_section",
+   "fieldtype": "Section Break",
+   "label": "FAMILY BACKGROUND"
+  },
+  {
+   "fieldname": "indicate_your_family_status",
+   "fieldtype": "Select",
+   "label": "Indicate your Family Status",
+   "options": "Both Parents Dead\nOne Parent Dead\nBoth Parents Alive\nSingle Parent\nOthers"
+  },
+  {
+   "fieldname": "number_of_siblings",
+   "fieldtype": "Data",
+   "label": "Number of siblings  (alive)"
+  },
+  {
+   "fieldname": "estimated_family_income",
+   "fieldtype": "Data",
+   "label": "Estimated Family income (annually Kshs.) "
+  },
+  {
+   "fieldname": "estimated_family_expense",
+   "fieldtype": "Data",
+   "label": "Estimated Family expense (annually Kshs.)   Attach support documents eg- death certificate / a verification letter from area chief/sub chief"
+  },
+  {
+   "fieldname": "column_break_pen4l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_mother_details_section",
+   "fieldtype": "Section Break",
+   "label": "Father Mother Details"
+  },
+  {
+   "fieldname": "father_foll_name",
+   "fieldtype": "Data",
+   "label": "Father Foll Name"
+  },
+  {
+   "fieldname": "father_telephone_number",
+   "fieldtype": "Data",
+   "label": "Father Telephone Number"
+  },
+  {
+   "fieldname": "father__address",
+   "fieldtype": "Data",
+   "label": "Father  Address"
+  },
+  {
+   "fieldname": "father__occupation",
+   "fieldtype": "Data",
+   "label": "Father  Occupation"
+  },
+  {
+   "fieldname": "type_of_employment",
+   "fieldtype": "Select",
+   "label": "Type of employment",
+   "options": "Permanent\nContractual\nCasual\nRetired\nSelf employed\nNone"
+  },
+  {
+   "fieldname": "main_source_of_income",
+   "fieldtype": "Data",
+   "label": "Main source of income "
+  },
+  {
+   "fieldname": "mother_full_name",
+   "fieldtype": "Data",
+   "label": "Mother Full Name"
+  },
+  {
+   "fieldname": "mother_telephone_number",
+   "fieldtype": "Data",
+   "label": "Mother Telephone Number"
+  },
+  {
+   "fieldname": "mother__address",
+   "fieldtype": "Data",
+   "label": "Mother  Address"
+  },
+  {
+   "fieldname": "mother_occupation",
+   "fieldtype": "Data",
+   "label": "Mother Occupation"
+  },
+  {
+   "fieldname": "type_of_employment_mother",
+   "fieldtype": "Select",
+   "label": "Type of employment Mother",
+   "options": "Permanent\nContractual\nCasual\nRetired\nSelf employed\nNone"
+  },
+  {
+   "fieldname": "column_break_hkoj6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guardian_details_section",
+   "fieldtype": "Section Break",
+   "label": "Guardian Details"
+  },
+  {
+   "fieldname": "main_source_of_income_mother",
+   "fieldtype": "Data",
+   "label": "Main Source of Income Mother"
+  },
+  {
+   "fieldname": "guardian_full_name",
+   "fieldtype": "Data",
+   "label": "Guardian Full Name"
+  },
+  {
+   "fieldname": "guardian__telephone_number",
+   "fieldtype": "Data",
+   "label": "Guardian  Telephone Number"
+  },
+  {
+   "fieldname": "guardian__address",
+   "fieldtype": "Data",
+   "label": "Guardian  Address"
+  },
+  {
+   "fieldname": "guardian__occupation",
+   "fieldtype": "Data",
+   "label": "Guardian  Occupation"
+  },
+  {
+   "fieldname": "guardian__type_of_employement",
+   "fieldtype": "Select",
+   "label": "Guardian  Type of Employement",
+   "options": "Permanent\nContractual\nCasual\nRetired\nSelf employed\nNone"
+  },
+  {
+   "fieldname": "guardian__main_source_of_income",
+   "fieldtype": "Data",
+   "label": "Guardian  Main Source of Income"
+  },
+  {
+   "fieldname": "provide_the_names_of_siblings_in_school",
+   "fieldtype": "Table",
+   "label": "Provide the names of siblings in school",
+   "options": "Sibling"
+  },
+  {
+   "fieldname": "applicants_additional_information_section",
+   "fieldtype": "Section Break",
+   "label": "Applicants Additional Information"
+  },
+  {
+   "fieldname": "why_are_you_applying_for_bursary_assistance",
+   "fieldtype": "Small Text",
+   "label": "Why are you applying for bursary assistance"
+  },
+  {
+   "fieldname": "have_you_received_any_financial_support",
+   "fieldtype": "Small Text",
+   "label": "Have you received any financial support/ bursaries from NG-CDF in the past? Yes ()) No. ()  If yes, specify how much and when you last recei"
+  },
+  {
+   "fieldname": "bursaries_from_other_organizations_in_the_past",
+   "fieldtype": "Small Text",
+   "label": "Have you received any financial support / bursaries from other organizations in the past? ? Yes ( ) No. ()  If yes, please provide details"
+  },
+  {
+   "fieldname": "do_you_suffer_from_any_physical_impairment",
+   "fieldtype": "Small Text",
+   "label": "Do you suffer from any physical impairment (disability) ? Yes () No. ()  If yes, please provide details"
+  },
+  {
+   "fieldname": "do_you_suffer_from_any_chronic_illness",
+   "fieldtype": "Small Text",
+   "label": "Do you suffer from any chronic illness ? Yes (O No. ()  If yes, please provide details / evidence"
+  },
+  {
+   "fieldname": "o_your_parents",
+   "fieldtype": "Small Text",
+   "label": "o your parents / / guardians have any form of disability? Yes () No. ()  If yes, please describe the disability"
+  },
+  {
+   "fieldname": "guardians_suffer_from_any_chronic_illness",
+   "fieldtype": "Small Text",
+   "label": "Do your parents / guardians suffer from any chronic illness? Yes () No. ()  If yes, please provide details"
+  },
+  {
+   "fieldname": "education_funding_history_section",
+   "fieldtype": "Section Break",
+   "label": "Education Funding History (state the main source of funding for your education in the past as below)"
+  },
+  {
+   "fieldname": "in_secondary_schoo",
+   "fieldtype": "Small Text",
+   "label": "In secondary school "
+  },
+  {
+   "fieldname": "in_colleg",
+   "fieldtype": "Small Text",
+   "label": "In colleg"
+  },
+  {
+   "fieldname": "in_the_university",
+   "fieldtype": "Small Text",
+   "label": "In the university"
+  },
+  {
+   "fieldname": "column_break_vawmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_sources_of_funding_in_secondary_school",
+   "fieldtype": "Small Text",
+   "label": "Other sources of funding In secondary school"
+  },
+  {
+   "fieldname": "other_sources_of_funding_in_college",
+   "fieldtype": "Small Text",
+   "label": "Other sources of funding in college"
+  },
+  {
+   "fieldname": "other_sources_of_funding_in_university",
+   "fieldtype": "Small Text",
+   "label": "Other sources of funding in university"
+  },
+  {
+   "fieldname": "applicants_accadamic_performance_section",
+   "fieldtype": "Section Break",
+   "label": "Applicants Accadamic Performance"
+  },
+  {
+   "fieldname": "what_is_your_average_academic_performance",
+   "fieldtype": "Select",
+   "label": "What is your average academic performance",
+   "options": "Excellent\nVery Good\nGood\nFair\nPoor"
+  },
+  {
+   "fieldname": "have_you_been_sent_away_from_school",
+   "fieldtype": "Select",
+   "label": "have you been sent away from school",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "if_yes",
+   "fieldtype": "Small Text",
+   "label": "if yes, provide reasons for your absence"
+  },
+  {
+   "fieldname": "specify_the_number_of_weeks_you_stayed_away_from_school",
+   "fieldtype": "Int",
+   "label": "Specify the number of weeks you stayed away from school"
+  },
+  {
+   "fieldname": "annual_fees_as_per_fees_structure",
+   "fieldtype": "Currency",
+   "label": "Annual fees as per fees structure (Kshs)"
+  },
+  {
+   "fieldname": "last_semester",
+   "fieldtype": "Currency",
+   "label": "Last semesters  / Term's fee balance (Kshs)"
+  },
+  {
+   "fieldname": "this_semester",
+   "fieldtype": "Currency",
+   "label": "This semesters / Term's fee balance (Kshs)"
+  },
+  {
+   "fieldname": "next_semester",
+   "fieldtype": "Currency",
+   "label": "Next semesters / Term's fee balance (Kshs)"
+  },
+  {
+   "fieldname": "loan_from_helb",
+   "fieldtype": "Data",
+   "label": "Loan from HELB ( where applicable)"
+  },
+  {
+   "fieldname": "referees_section",
+   "fieldtype": "Section Break",
+   "label": "REFEREES (The student / parent /guardian should provide the names and telephone contacts of at least two reterees who  know the family wel1."
+  },
+  {
+   "fieldname": "refer1_name",
+   "fieldtype": "Data",
+   "label": "Refer1 Name"
+  },
+  {
+   "fieldname": "refer1_address",
+   "fieldtype": "Small Text",
+   "label": "Refer1 Address"
+  },
+  {
+   "fieldname": "refer1_telephone_number",
+   "fieldtype": "Data",
+   "label": "Refer1 Telephone Number"
+  },
+  {
+   "fieldname": "column_break_0pxao",
+   "fieldtype": "Column Break",
+   "label": "Reference 2"
+  },
+  {
+   "fieldname": "refer2_name",
+   "fieldtype": "Data",
+   "label": "Refer2 Name"
+  },
+  {
+   "fieldname": "refer2_address",
+   "fieldtype": "Small Text",
+   "label": "Refer2 Address"
+  },
+  {
+   "fieldname": "refer2_telephone_number",
+   "fieldtype": "Data",
+   "label": "Refer2 Telephone Number"
+  },
+  {
+   "fieldname": "declarations_section",
+   "fieldtype": "Section Break",
+   "label": "DECLARATIONS "
+  },
+  {
+   "default": "0",
+   "description": "I declare that I have read this form/ this form has been read to me and I hereby confirm that the \ninformation given herein is true to the best of my knowledge and belief; I understand that any false \ninformation provided shall lead to my automatic disqualification by the committee",
+   "fieldname": "students_declaration",
+   "fieldtype": "Check",
+   "label": "Students Declaration"
+  },
+  {
+   "fieldname": "students_signature",
+   "fieldtype": "Signature",
+   "label": "Students Signature"
+  },
+  {
+   "fieldname": "student_date",
+   "fieldtype": "Date",
+   "label": " Date"
+  },
+  {
+   "fieldname": "column_break_5dgyg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "I declare that I have read this form/ this form has been read to me and I hereby confirm that the \ninformation given herein is true to the best of my knowledge and belief; I understand that any false \ninformation provided shall lead to disqualification of the student by the committee.",
+   "fieldname": "parents",
+   "fieldtype": "Check",
+   "label": "Parents / Guardiyans Declaration"
+  },
+  {
+   "fieldname": "guardians_name",
+   "fieldtype": "Data",
+   "label": "Guardians Name"
+  },
+  {
+   "fieldname": "guardians_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "guardians_sign",
+   "fieldtype": "Signature",
+   "label": "Guardians Sign"
+  },
+  {
+   "fieldname": "verifications_section",
+   "fieldtype": "Section Break",
+   "label": "VERIFICATIONS"
+  },
+  {
+   "fieldname": "religious_leader",
+   "fieldtype": "Data",
+   "label": "Religious leader"
+  },
+  {
+   "fieldname": "name_of_religion",
+   "fieldtype": "Data",
+   "label": "Name of religion"
+  },
+  {
+   "fieldname": "type_of_religion",
+   "fieldtype": "Select",
+   "label": "Type of religion",
+   "options": "Christian\nMuslim\nHindu\nAny other"
+  },
+  {
+   "fieldname": "if_other_specify",
+   "fieldtype": "Data",
+   "label": "If other specify"
+  },
+  {
+   "fieldname": "comment_on_the_status_of_the_family",
+   "fieldtype": "Small Text",
+   "label": "Comment on the status of the family"
+  },
+  {
+   "default": "0",
+   "fieldname": "certify_that_the_information_given_herein_is_true",
+   "fieldtype": "Check",
+   "label": "CERTIFY THAT THE INFORMATION GIVEN HEREIN IS TRUE"
+  },
+  {
+   "fieldname": "nane_certify",
+   "fieldtype": "Data",
+   "label": "Nane "
+  },
+  {
+   "fieldname": "signature_certify",
+   "fieldtype": "Signature",
+   "label": "Signature "
+  },
+  {
+   "fieldname": "date_certify",
+   "fieldtype": "Date",
+   "label": "Date  & Official Stamp"
+  },
+  {
+   "fieldname": "chief_section",
+   "fieldtype": "Section Break",
+   "label": " Chief  / Assistant chief "
+  },
+  {
+   "fieldname": "name_of_the_area_chief",
+   "fieldtype": "Data",
+   "label": "Name of the area chief / Assistant chief"
+  },
+  {
+   "fieldname": "sub_local",
+   "fieldtype": "Data",
+   "label": "Location / Sub Location"
+  },
+  {
+   "fieldname": "parents_of_the_applican",
+   "fieldtype": "Small Text",
+   "label": "parents of the applican"
+  },
+  {
+   "default": "0",
+   "fieldname": "i_certify_that_the_information_given_herein_is_true",
+   "fieldtype": "Check",
+   "label": "I CERTIFY THAT THE INFORMATiON GIVEN HEREIN IS TRUE "
+  },
+  {
+   "fieldname": "chief_sign",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "chief_date",
+   "fieldtype": "Date",
+   "label": "Date & Official Stamp"
+  },
+  {
+   "fieldname": "for_official_use_by_the_polling_station_vetting_section",
+   "fieldtype": "Section Break",
+   "label": "FOR OFFICIAL USE BY THE POLLING STATION VETTING COMMITTEE"
+  },
+  {
+   "fieldname": "dualy_sign",
+   "fieldtype": "Select",
+   "label": "This form was dully filled and signed",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "dualy_attach",
+   "fieldtype": "Select",
+   "label": "All support documents hav been attached ",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "recommended_for_bursary",
+   "fieldtype": "Select",
+   "label": "Recommended for Bursary",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "reasons_for_non_recommendation",
+   "fieldtype": "Small Text",
+   "label": "Reasons for non recommendation"
+  },
+  {
+   "fieldname": "polling_station_vetting_committee_members_section",
+   "fieldtype": "Heading",
+   "label": "Polling station vetting committee members"
+  },
+  {
+   "fieldname": "chairperson_section",
+   "fieldtype": "Section Break",
+   "label": "Chairperson"
+  },
+  {
+   "fieldname": "chairpersons_name",
+   "fieldtype": "Data",
+   "label": "Chairpersons Name"
+  },
+  {
+   "fieldname": "chairperson_date",
+   "fieldtype": "Date",
+   "label": " Date"
+  },
+  {
+   "fieldname": "chairperson_signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "secretary_section",
+   "fieldtype": "Section Break",
+   "label": "Secretary"
+  },
+  {
+   "fieldname": "secretarys_name",
+   "fieldtype": "Data",
+   "label": "Secretarys Name"
+  },
+  {
+   "fieldname": "secretary_date",
+   "fieldtype": "Date",
+   "label": " Date"
+  },
+  {
+   "fieldname": "secretary_signature",
+   "fieldtype": "Signature",
+   "label": " Signature"
+  },
+  {
+   "fieldname": "member_section",
+   "fieldtype": "Section Break",
+   "label": "Member"
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "member_date",
+   "fieldtype": "Date",
+   "label": "Member Date"
+  },
+  {
+   "fieldname": "member_signature",
+   "fieldtype": "Signature",
+   "label": "Member Signature"
+  },
+  {
+   "fieldname": "bursary_sub_commattie",
+   "fieldtype": "Section Break",
+   "label": "FOR OFFICIAL USE BY THE cONSTTTUENCY EDUCATION BURSARY SUB COMMITTEE"
+  },
+  {
+   "fieldname": "recommended_for_bursary_award",
+   "fieldtype": "Select",
+   "label": "Recommended for Bursary award ",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "bursary_awarded_kshs",
+   "fieldtype": "Currency",
+   "label": "Bursary awarded Kshs"
+  },
+  {
+   "fieldname": "reasons",
+   "fieldtype": "Small Text",
+   "label": "Reasons"
+  },
+  {
+   "fieldname": "sec_name",
+   "fieldtype": "Data",
+   "label": "Secretarys Name"
+  },
+  {
+   "fieldname": "com_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "com_signature",
+   "fieldtype": "Data",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "con_stamp",
+   "fieldtype": "Data",
+   "label": "Official Stamp"
+  },
+  {
+   "fieldname": "column_break_vrwoh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clbr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sibling_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sibling Details"
+  },
+  {
+   "fieldname": "column_break_fnoml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_r2kg7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vsots",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xphgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qgdgv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9w4t7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eqaa7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uploading_supporting_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Uploading Supporting Documents"
+  },
+  {
+   "fieldname": "upload_documents",
+   "fieldtype": "Table",
+   "label": "Upload Documents",
+   "options": "Bursary Attach"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 6,
+ "modified": "2023-04-04 08:47:02.498898",
+ "modified_by": "Administrator",
+ "module": "Bursary",
+ "name": "Bursary Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

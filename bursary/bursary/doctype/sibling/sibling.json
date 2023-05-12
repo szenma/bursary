@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-03 12:57:08.155118",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "secondary",
+  "college",
+  "university",
+  "anmual_fees_payable"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "secondary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Secondary"
+  },
+  {
+   "fieldname": "college",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "College"
+  },
+  {
+   "fieldname": "university",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "University"
+  },
+  {
+   "fieldname": "anmual_fees_payable",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Anmual fees payable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-03 13:01:22.631745",
+ "modified_by": "Administrator",
+ "module": "Bursary",
+ "name": "Sibling",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
